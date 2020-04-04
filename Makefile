@@ -1,4 +1,5 @@
-obj-m += hello_1.o
+obj-m += hello_1.o hello_2.o
+
 all:
 	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
 clean:
